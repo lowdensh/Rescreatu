@@ -1,12 +1,13 @@
 <style>
+  /* Colours
+    Back: 003c7b
+    Main: 55aebb
+    Accent: bb4255
+  */
+
   /* Hiding */
   #footer_bg {background-image:none;}
   #social {display:none;}
-
-  /* Colours
-    Main colour: 55aebb
-    Accent: bb4255
-  */
 
   /* General Styling */
   body {
@@ -18,18 +19,16 @@
   }
   a, a:visited {color:#bb4255;}
   a:hover {color:#55aebb; text-decoration:none;}
-  table td.head {background-color:#55aebb; text-align:left; font-size:1.17em;}
-  tr:nth-child(even) {background-color:#f2f2f2;}
 
   /* Custom Elements */
   #cred {position:fixed; top:0; right:0; padding:5px; background-color:rgb(255,255,255,0.6); border-bottom-left-radius:4px;}
-  #cred a, #cred a:visited {color:#2677bc;} #cred a:hover {text-decoration:underline;}
-  .contentbox {background-color:#fff; width:80%; margin:0 auto;}
-  .scrollbox {height:100px; border:1px dotted #55aebb; overflow:auto; padding:4px;}
-  #stickyvixen {position:fixed; bottom:0; right:0; padding:20px; opacity:0.3;}
-  #stickyvixen img {height:64px; width:64px;}
+  #cred a, #cred a:visited {color:#2677bc;}
+  #cred a:hover {text-decoration:underline;}
+  #stickyvixen {position:fixed; bottom:0; right:0; padding:20px;}
+  #stickyvixen img {height:64px; width:64px; opacity:0.3; transition:0.2s;}
   #stickyvixen img:hover {
-    cursor:url(http://cur.cursors-4u.net/others/oth-6/oth588.cur), auto !important;
+    opacity:0.6;
+    cursor:url("http://cur.cursors-4u.net/others/oth-6/oth588.cur"), auto !important;
     animation:bounce 0.3s;
     animation-direction:alternate;
     animation-iteration-count:infinite;}
@@ -37,6 +36,12 @@
     0% {transform:translateY(0);}
     100% {transform:translateY(-20px);}
   }
+  .contentbox {background-color:#fff; width:80%; margin:0 auto;}
+  .scrollbox {height:100px; border:1px dotted #55aebb; overflow:auto; padding:4px;}
+
+  /* Tables */
+  table td.head {background-color:#55aebb; text-align:left; font-size:1.17em;}
+  tr:nth-child(even) {background-color:#f2f2f2;}
 
   /* block6: Individual Pet */
   #block6 td {border:0px;}
@@ -61,11 +66,11 @@
   #block2 table {overflow:hidden;}
   #block2 tr {background-color:#f2f2f2;}
   #block2 td.subheader {display:none;}
-  #block2 img {width:130px; height:130px; transition:0.2s;}
-  #block2 img:hover {width:135px; height:135px; opacity:0.9; cursor:url(http://cur.cursors-4u.net/others/oth-6/oth588.cur), auto !important;}
+  #block2 img {width:130px; height:130px; opacity:0.9; transition:0.2s;}
+  #block2 img:hover {width:135px; height:135px; opacity:1; cursor:url("http://cur.cursors-4u.net/others/oth-6/oth588.cur"), auto !important;}
+</style>
 
-</style><div id="cred"><a href="http://www.rescreatu.com/profile.php?username=River">River Code</a></div>
-
+<div id="cred"><a href="http://www.rescreatu.com/profile.php?username=River">River Code</a></div>
 <div id="stickyvixen"><img src="https://i.imgur.com/nq2KCxO.png" /></div>
 
 <div class="contentbox" align="center">
