@@ -1,16 +1,19 @@
 <style>
+  /* General Styling */
   table td.head {background-color: #85b5c6; text-align: left; font-size: 1.17em;}
   tr:nth-child(even) {background-color: #f2f2f2;}
-  .box {width:78%; margin:0 auto;}
+
+  /* Custom Classes */
+  #cred {background-color: rgb(255,255,255,1); padding: 5px; position: fixed; top: 0; right: 0;}
+  .contentbox {background-color: #fff; width: 80%; margin: 0 auto;}
+  .scrollbox {height: 100px; border: 1px dotted #85b5c6; overflow: auto; padding: 4px;}
 
   /* block6: Individual Pet */
   #block6 td {border: 0px;}
   #block6 td.head {text-align: center;}
   #block6 tr:nth-child(2) td {font-size: 10px; text-align: right;}
   #block6 tr:nth-child(3) {background-color: #f2f2f2;}
-  #block6 img {width: 220px; height: 220px;}
-
-  /* block3: Wish List, Trophies */
+  #block6 img {width: 220px; height: 220px; -webkit-transform: scaleX(-1); transform: scaleX(-1);}
 
   /* block1: River's Account */
   #block1 td {border: 0px;}
@@ -27,10 +30,12 @@
   #block2 table {overflow: hidden;}
   #block2 tr {background-color: #f2f2f2;}
   #block2 td.subheader {display: none;}
-  #block2 img {width: 130px; height: 130px; -webkit-transform: scaleX(-1); transform: scaleX(-1);}
-</style>
+  #block2 img {width: 130px; height: 130px; transition: 0.2s;}
+  #block2 img:hover {width: 135px; height: 135px; opacity: 0.9;}
 
-<div class="box" align="center">
+</style><div id="cred"><a href="http://www.rescreatu.com/profile.php?username=River">River Code</a></div>
+
+<div class="contentbox" align="center">
   <p>
   <b>River's Profile</b> |
   <a href="http://www.rescreatu.com/rmail/new/River/" target="_blank">Rmail Me</a> |
@@ -42,11 +47,11 @@
 
 <br /><hr><br />
 
-<div class="box" style="clear: both;">
+<div class="contentbox">
   <h3>Special Thanks:</h3><br />
 
-  <div style="height:100px; border:1px dotted #85b5c6; overflow:auto;">
-    <table style="margin:4px; padding:2px; text-align:left;">
+  <div class="scrollbox">
+    <table style="text-align:left;">
       <tr>
         <td><b>17/01/20</b></td>
         <td><a href="http://www.rescreatu.com/profile.php?id=16976" target="_blank">Kitteness</a> for being a perfectly ripe fruit (and for my Ageless Extract)</td>
