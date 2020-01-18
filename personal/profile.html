@@ -1,39 +1,72 @@
 <style>
-  /* General Styling */
-  table td.head {background-color: #85b5c6; text-align: left; font-size: 1.17em;}
-  tr:nth-child(even) {background-color: #f2f2f2;}
+  /* Hiding */
+  #footer_bg {background-image:none;}
+  #social {display:none;}
 
-  /* Custom Classes */
-  #cred {background-color: rgb(255,255,255,1); padding: 5px; position: fixed; top: 0; right: 0;}
-  .contentbox {background-color: #fff; width: 80%; margin: 0 auto;}
-  .scrollbox {height: 100px; border: 1px dotted #85b5c6; overflow: auto; padding: 4px;}
+  /* Colours
+    Main colour: 55aebb
+    Accent: bb4255
+  */
+
+  /* General Styling */
+  body {
+    background-color: #003c7b;
+    background-image: url("https://i.imgur.com/UZNGdDJ.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  a, a:visited {color:#bb4255;}
+  a:hover {color:#55aebb; text-decoration:none;}
+  table td.head {background-color:#55aebb; text-align:left; font-size:1.17em;}
+  tr:nth-child(even) {background-color:#f2f2f2;}
+
+  /* Custom Elements */
+  #cred {position:fixed; top:0; right:0; padding:5px; background-color:rgb(255,255,255,0.6); border-bottom-left-radius:4px;}
+  #cred a, #cred a:visited {color:#2677bc;} #cred a:hover {text-decoration:underline;}
+  .contentbox {background-color:#fff; width:80%; margin:0 auto;}
+  .scrollbox {height:100px; border:1px dotted #55aebb; overflow:auto; padding:4px;}
+  #stickyvixen {position:fixed; bottom:0; right:0; padding:20px; opacity:0.3;}
+  #stickyvixen img {height:64px; width:64px;}
+  #stickyvixen img:hover {
+    cursor:url(http://cur.cursors-4u.net/others/oth-6/oth588.cur), auto !important;
+    animation:bounce 0.3s;
+    animation-direction:alternate;
+    animation-iteration-count:infinite;}
+  @keyframes bounce {
+    0% {transform:translateY(0);}
+    100% {transform:translateY(-20px);}
+  }
 
   /* block6: Individual Pet */
-  #block6 td {border: 0px;}
-  #block6 td.head {text-align: center;}
-  #block6 tr:nth-child(2) td {font-size: 10px; text-align: right;}
-  #block6 tr:nth-child(3) {background-color: #f2f2f2;}
-  #block6 img {width: 220px; height: 220px; -webkit-transform: scaleX(-1); transform: scaleX(-1);}
+  #block6 td {border:0px;}
+  #block6 td.head {text-align:center;}
+  #block6 tr:nth-child(2) td {font-size:10px; text-align:right;}
+  #block6 tr:nth-child(3) {background-color:#f2f2f2;}
+  #block6 img {width:220px; height:220px; -webkit-transform:scaleX(-1); transform:scaleX(-1);}
+  #block6 img:hover {cursor:url(http://cur.cursors-4u.net/others/oth-6/oth588.cur), auto !important;}
 
   /* block1: River's Account */
-  #block1 td {border: 0px;}
-  #block1 table tbody tr:nth-last-child(8) {display: none;} /* TU */
-  #block1 table tbody tr:nth-last-child(7) {display: none;} /* Credits */
-  #block1 table tbody tr:nth-last-child(6) {display: none;} /* Cash Points */
-  #block1 table tbody tr:nth-last-child(5) {display: none;} /* Avatars */
-  #block1 table tbody tr:nth-last-child(4) {display: none;} /* Blog */
-  #block1 table tbody tr:nth-last-child(3) {display: none;} /* Links: Showroom, Gallery, Request ResPal and Rmail */
-  #block1 table tbody tr:nth-last-child(2) {display: none;} /* Header: Sales */
-  #block1 table tbody tr:nth-last-child(1) {display: none;} /* Links: Rancher Shop, Merchant Shop, Egg Market and Item Trades */
+  #block1 td {border:0px;}
+  #block1 table tbody tr:nth-last-child(8) {display:none;} /* TU */
+  #block1 table tbody tr:nth-last-child(7) {display:none;} /* Credits */
+  #block1 table tbody tr:nth-last-child(6) {display:none;} /* Cash Points */
+  #block1 table tbody tr:nth-last-child(5) {display:none;} /* Avatars */
+  #block1 table tbody tr:nth-last-child(4) {display:none;} /* Blog */
+  #block1 table tbody tr:nth-last-child(3) {display:none;} /* Links:Showroom, Gallery, Request ResPal and Rmail */
+  #block1 table tbody tr:nth-last-child(2) {display:none;} /* Header:Sales */
+  #block1 table tbody tr:nth-last-child(1) {display:none;} /* Links:Rancher Shop, Merchant Shop, Egg Market and Item Trades */
 
   /* block2: All Pets */
-  #block2 table {overflow: hidden;}
-  #block2 tr {background-color: #f2f2f2;}
-  #block2 td.subheader {display: none;}
-  #block2 img {width: 130px; height: 130px; transition: 0.2s;}
-  #block2 img:hover {width: 135px; height: 135px; opacity: 0.9;}
+  #block2 table {overflow:hidden;}
+  #block2 tr {background-color:#f2f2f2;}
+  #block2 td.subheader {display:none;}
+  #block2 img {width:130px; height:130px; transition:0.2s;}
+  #block2 img:hover {width:135px; height:135px; opacity:0.9; cursor:url(http://cur.cursors-4u.net/others/oth-6/oth588.cur), auto !important;}
 
 </style><div id="cred"><a href="http://www.rescreatu.com/profile.php?username=River">River Code</a></div>
+
+<div id="stickyvixen"><img src="https://i.imgur.com/nq2KCxO.png" /></div>
 
 <div class="contentbox" align="center">
   <p>
@@ -72,10 +105,10 @@
         <td><b>13/01/20</b></td>
         <td><a href="http://www.rescreatu.com/profile.php?id=233605" target="_blank">Pikachu</a> for my freshly hatched <a href="http://www.rescreatu.com/petpages/?id=3377061" target="_blank">Cyancu</a></td>
       </tr>
-        <tr>
-          <td><b>12/01/20</b></td>
-          <td><a href="http://www.rescreatu.com/profile.php?id=46656" target="_blank">Tiberius</a> for the <a href="http://www.rescreatu.com/petpages/?id=2344032" target="_blank">Ashbringer folksong</a></td>
-        </tr>
+      <tr>
+        <td><b>12/01/20</b></td>
+        <td><a href="http://www.rescreatu.com/profile.php?id=46656" target="_blank">Tiberius</a> for the <a href="http://www.rescreatu.com/petpages/?id=2344032" target="_blank">Ashbringer folksong</a></td>
+      </tr>
       <tr>
         <td><b>10/01/20</b></td>
         <td><a href="http://www.rescreatu.com/profile.php?id=135873" target="_blank">Tea</a> for the Tesuri eggs - I'll keep them safe in my tea drawer</td>
