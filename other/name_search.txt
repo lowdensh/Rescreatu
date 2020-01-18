@@ -5,7 +5,7 @@ Gondra Haberisar Iluvu Intes Ivik
 Jaaku Jahra Kayoki Kioka Kurrabi Leverene Liyure
 Malal Meiko Meragon
 Mirabilis Murren Myotis Narwi Noctis Omni QUELIS
-Otachie Paor Roditore RSTU001 RSTU002 Saruka Shaefu
+OTACHIE PAOR Roditore RSTU001 RSTU002 Saruka Shaefu
 Sirleon Skaldyr Tesuri Uilus
 Valabex Vaspi Veram Vogar
 Wyrae Zaphao Zenirix
@@ -25,6 +25,22 @@ x
 User: x
 Last Seen: x
 Pet Location: x
+
+============================
+
+Jay
+Name Search Results: Pneuma
+
+Pneuma
+Born on 2011-01-25 02:36:56
+Species:Veram
+Mutant:No
+Color:natural
+Gender:Female
+
+User: http://www.rescreatu.com/profile.php?username=Redrock
+Last Seen: 2020-01-18 07:26:59
+Pet Location: http://www.rescreatu.com/gallery/?u=113004&cat=0&petType=0&color=0&search=Pneuma
 
 ============================
 
