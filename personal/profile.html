@@ -1,8 +1,8 @@
 <style>
   /* Colours
-    Back: 003c7b
-    Main: 55aebb
-    Accent: bb4255
+    Back: 003c7b - background
+    Main: 55aebb - headers, link hover
+    Accent: bb4255 - links
   */
 
   /* Hiding */
@@ -30,9 +30,9 @@
   #cred {position:fixed; top:0; right:0; padding:5px; background-color:rgb(255,255,255,0.6); border-bottom-left-radius:4px;}
   #cred a, #cred a:visited {color:#2677bc;}
   #cred a:hover {text-decoration:underline;}
-  #stickyvixen {position:fixed; bottom:0; right:0; padding:20px;}
-  #stickyvixen img {height:64px; width:64px; opacity:0.3; transition:0.2s;}
-  #stickyvixen img:hover {
+  #jumpbox {position:fixed; bottom:0; right:0; padding:20px;}
+  #jumpbox img {height:64px; width:64px; opacity:0.3; transition:0.2s;}
+  #jumpbox img:hover {
     opacity:0.6;
     cursor:url("http://cur.cursors-4u.net/others/oth-6/oth588.cur"), auto !important;
     animation:bounce 0.3s;
@@ -42,12 +42,17 @@
     0% {transform:translateY(0);}
     100% {transform:translateY(-20px);}
   }
-  .contentbox {background-color:#fff; width:80%; margin:0 auto;}
+  .middlebox {background-color:#fff; width:80%; margin:0 auto; text-align:center;}
+  .leftbox {background-color:#fff; width:348px; float:left; margin-left:10px;}
+  .rightbox {background-color:#fff; width:218px; float:right; margin-right:4px;}
   .scrollbox {height:100px; border:1px dotted #55aebb; overflow:auto; padding:4px;}
+  .scrollblock {height:100px; overflow:auto;}
+  .scrollblockhead {background-color:#55aebb; text-align:left; font-size:1.17em; padding:8px; color:#fff; font-weight:bold;}
 
   /* Tables */
   table td.head {background-color:#55aebb; text-align:left; font-size:1.17em;}
   tr:nth-child(even) {background-color:#f2f2f2;}
+  .middlebox table, .leftbox table, .rightbox table {text-align:left;}
 
   /* block6: Individual Pet */
   #block6 td {border:0px;}
@@ -58,7 +63,7 @@
   #block6 img:hover {cursor:url(http://cur.cursors-4u.net/others/oth-6/oth588.cur), auto !important;}
 
   /* block1: River's Account */
-  #block1 td {border:0px;}
+  #block1 td {border:0px!important;}
   #block1 table tbody tr:nth-last-child(8) {display:none;} /* TU */
   #block1 table tbody tr:nth-last-child(7) {display:none;} /* Credits */
   #block1 table tbody tr:nth-last-child(6) {display:none;} /* Cash Points */
@@ -78,9 +83,9 @@
 </style>
 
 <div id="cred"><a href="http://www.rescreatu.com/profile.php?username=River">River Code</a></div>
-<div id="stickyvixen"><img src="https://i.imgur.com/nq2KCxO.png" /></div>
+<div id="jumpbox"><img src="https://i.imgur.com/nq2KCxO.png" /></div>
 
-<div class="contentbox" align="center">
+<div class="middlebox">
   <p>
   <b>River's Profile</b> |
   <a href="http://www.rescreatu.com/rmail/new/River/" target="_blank">Rmail Me</a> |
@@ -90,13 +95,17 @@
   </p>
 </div>
 
-<hr />
+<br /><br />
 
-<div class="contentbox">
-  <h3>Special Thanks:</h3><br />
+<div class="rightbox" style="padding-top:14px; border-bottom:4px solid #55aebb;">
+  <img src="https://i.imgur.com/qXChR6S.png" style="display:block; margin-left:auto; margin-right:auto;"/>
+</div>
 
-  <div class="scrollbox">
-    <table style="text-align:left;">
+<div class="leftbox">
+  <!-- <h3>Special Thanks:</h3><br /> -->
+  <div class="scrollblockhead">Special Thanks</div>
+  <div class="scrollblock">
+    <table>
       <tr>
         <td><b>17/01/20</b></td>
         <td><a href="http://www.rescreatu.com/profile.php?id=16976" target="_blank">Kitteness</a> for being a perfectly ripe fruit (and for my Ageless Extract)</td>
